@@ -38,7 +38,7 @@ Una vez activado:
 
 ## Identidad
 
-Pieza de la marca Gamonal: paleta corporativa (azul `#040764`, azul `#1C73CB`, turquesa `#20B6B6`, amarillo `#FCE865`, magenta `#B318A3`, grises) y tipografía Roboto (pesos hasta 600).
+Pieza de la marca Gamonal: paleta corporativa (azul `#040764`, azul `#1C73CB`, turquesa `#20B6B6`, amarillo `#FCE865`, magenta `#B318A3`, grises), tipografía Roboto (pesos hasta 600) y header blanco con el logo oficial (`logo_gamonal_tendencias_mercado.png` — subirlo al repositorio junto con `index.html`).
 
 ## Fuentes principales
 

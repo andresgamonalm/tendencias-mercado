@@ -81,7 +81,7 @@ body.editing [data-edit-static] {
 }
 body.editing [data-edit-static]:hover {
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 0 1px rgba(243, 243, 231, 0.25);
+  box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.25);
 }
 body.editing [data-edit-static]:focus {
   background: rgba(255, 255, 255, 0.08);
@@ -145,7 +145,7 @@ body.editing .edit-banner { display: block; }
 
 .edit-banner button {
   background: transparent;
-  border: 1px solid rgba(243, 243, 231, 0.3);
+  border: 1px solid rgba(245, 245, 245, 0.3);
   color: var(--cream);
   padding: 6px 14px;
   border-radius: 100px;
@@ -447,7 +447,7 @@ body.editing .card-card-num { z-index: 4; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(243, 243, 231, 0.85);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: saturate(180%) blur(12px);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid rgba(4, 7, 100, 0.06);
@@ -455,8 +455,8 @@ body.editing .card-card-num { z-index: 4; }
 }
 
 .topbar.on-dark {
-  background: rgba(4, 7, 100, 0.78);
-  border-bottom-color: rgba(243, 243, 231, 0.08);
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(4, 7, 100, 0.06);
 }
 
 .topbar-inner {
@@ -480,25 +480,22 @@ body.editing .card-card-num { z-index: 4; }
   height: 36px;
 }
 
-.brand-word {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 21px;
-  letter-spacing: 0.03em;
-  color: var(--navy);
-  transition: color 0.3s var(--ease);
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
 }
 
 
 
-.topbar.on-dark .brand-word { color: var(--white); }
+
 
 
 .brand:hover { opacity: 0.75; }
 
 @media (max-width: 720px) {
   .brand { width: 100px; height: 30px; }
-  .brand-word { font-size: 18px; }
+  .brand-logo { height: 38px; }
 }
 
 .toolbar { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
@@ -553,15 +550,7 @@ body.editing .card-card-num { z-index: 4; }
 
 .pill svg { width: 12px; height: 12px; }
 
-.topbar.on-dark .pill {
-  border-color: var(--cream);
-  color: var(--cream);
-}
 
-.topbar.on-dark .pill:hover {
-  background: var(--cream);
-  color: var(--navy);
-}
 
 /* =========================================================
    SCREEN 1 — LANDING
@@ -585,7 +574,7 @@ body.editing .card-card-num { z-index: 4; }
   position: absolute;
   top: -20%; right: -10%;
   width: 60vw; height: 60vw;
-  background: radial-gradient(circle, rgba(217, 198, 177, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(252, 232, 101, 0.18), transparent 70%);
   pointer-events: none;
 }
 
@@ -594,7 +583,7 @@ body.editing .card-card-num { z-index: 4; }
   position: absolute;
   bottom: -30%; left: -10%;
   width: 50vw; height: 50vw;
-  background: radial-gradient(circle, rgba(163, 189, 203, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(32, 182, 182, 0.15), transparent 70%);
   pointer-events: none;
 }
 
@@ -650,7 +639,7 @@ body.editing .card-card-num { z-index: 4; }
 .hero-meta {
   font-size: 13px;
   font-style: italic;
-  color: rgba(243, 243, 231, 0.55);
+  color: rgba(245, 245, 245, 0.55);
   margin-bottom: 32px;
 }
 
@@ -676,7 +665,7 @@ body.editing .card-card-num { z-index: 4; }
 .hero-cta:hover {
   background: var(--cream);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(217, 198, 177, 0.35);
+  box-shadow: 0 12px 30px rgba(252, 232, 101, 0.35);
 }
 
 .hero-cta .arrow {
@@ -702,9 +691,9 @@ body.editing .card-card-num { z-index: 4; }
   color: var(--bluegray);
   margin: 8px 0 32px;
   padding: 24px 36px;
-  border: 1px solid rgba(163, 189, 203, 0.24);
+  border: 1px solid rgba(32, 182, 182, 0.24);
   border-radius: 16px;
-  background: rgba(243, 243, 231, 0.04);
+  background: rgba(245, 245, 245, 0.04);
 }
 
 .hero-stats > div { line-height: 1.2; }
@@ -1563,7 +1552,7 @@ body.editing #screen-chapters .chapters-header::after {
 <header class="topbar" id="topbar">
   <div class="topbar-inner">
     <a href="#" class="brand" onclick="goLanding(event)" aria-label="Gamonal — Inicio">
-      <span class="brand-word">Gamonal</span>
+      <img class="brand-logo" src="logo_gamonal_tendencias_mercado.png" alt="Gamonal — Brandformance Lab">
     </a>
     <div class="toolbar" id="toolbar">
       <button class="pill" onclick="goChapters()"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Capítulos</span></button>
@@ -6746,7 +6735,7 @@ function bumpChangeCount() {
   const current = JSON.stringify({ insights: INSIGHTS, chapters: CHAPTERS });
   if (baseline && baseline === current) {
     lbl.textContent = 'Sin cambios sin publicar';
-    lbl.style.color = 'rgba(243, 243, 231, 0.7)';
+    lbl.style.color = 'rgba(245, 245, 245, 0.7)';
   } else {
     lbl.textContent = 'Hay cambios sin publicar';
     lbl.style.color = '#FFB44C';
